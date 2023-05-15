@@ -69,7 +69,7 @@ const renderSectionHeader = ({ section }) => {
 const renderVehicleModelItem = ({ item }) => {
   return (
     <View>
-      <Text>{item.name} ({item.capacity})</Text>
+      <Text>{item.name} -- ({item.capacity})</Text>
     </View>
   );
 }  
@@ -81,7 +81,7 @@ const itemSeparatorComponent = () => <View style={{ borderColor: 'black', border
     // Demo: Section List
     <View style={styles.container}>
       {/* Attach header component */}
-      <AppHeader />
+      <AppHeader heading = "Baham (باہم)" slogan = "..Reduce carbon footprint.."/>
       <Login />
       <View style={styles.mainContainer}>
         <SectionList 
@@ -93,7 +93,7 @@ const itemSeparatorComponent = () => <View style={{ borderColor: 'black', border
         />
       </View>
       {/* Attach footer component */}
-      <AppFooter />
+      <AppFooter footer = "Copyright: Baham by project Dareecha (2023) -" />
     </View>
   );
 }
